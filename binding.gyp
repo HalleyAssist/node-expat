@@ -6,7 +6,7 @@
       'include_dirs': [
         '<!(node -e "require(\'nan\')")'
       ],
-      'cflags': [ "-Wno-cast-function-type" ],
+      'cflags': [ "-Wno-cast-function-type", "-flto" ],
       'dependencies': [
         'deps/libexpat/libexpat.gyp:expat'
       ]
